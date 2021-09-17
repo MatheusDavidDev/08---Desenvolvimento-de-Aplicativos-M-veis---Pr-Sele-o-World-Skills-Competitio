@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #252B42;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*CONTAINER DO MENU*/
+.container-header{
+    width: 1322px;
+    height: 91px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*navegação*/
+.menus-nav{
+    width: 280px;
+
+    margin-right: 100px;
+}
+
+.nav-img li{
+    display: none;
+}
+
+.menus-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    list-style-type: none;/*remove marcadores*/
+}
+
+.menus-nav li{
+    text-decoration: none;
+}
+
+.menus-nav a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menus-nav a:hover{
+    transition: 0.5s;
+    color: #23A6F0;
+}
+
+/*Login - Botão*/
+.nav-login{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+.nav-login a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-login a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #23A6F0;
+}
+
+/*Login - Botão*/
+.btn-member{
+    Width: 214px;
+    Height: 52px;
+
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+
+    background: #23A6F0;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-member:hover{
+    background: #23a5f0d5;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+
+@media screen and (max-width: 950px){
+
+.menus-nav{
+    width: 280px;
+    
+    margin-right: 0px;
+}
+
+.nav-login{
+    width: 300px;
+
+
+}
+
+}
+
+@media screen and (max-width: 800px){
+    .nav-img li{
+        display: unset;
+    }
+    
+    .nav-texto li{
+        display: none;
+    }
+
+    .nav-login{
+        display: none;
+    }
+
+    .menus-nav{
+        width: 30vw;
+        
+    }
+}
